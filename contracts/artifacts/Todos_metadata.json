@@ -1,0 +1,191 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					}
+				],
+				"name": "AddedTodo",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completed",
+								"type": "bool"
+							}
+						],
+						"indexed": false,
+						"internalType": "struct Todos.Todo",
+						"name": "_todo",
+						"type": "tuple"
+					}
+				],
+				"name": "ChangedTodoState",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					}
+				],
+				"name": "DeletedTodo",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					}
+				],
+				"name": "createTodo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "completed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Todos.Todo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lengthOfTodo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "toggleTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Todos.sol": "Todos"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Todos.sol": {
+			"keccak256": "0xdfa4f1fde26d35b8b67e2ffcd9cac1671383488d6d1b803b5c2ec7ca225a6a74",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d75df90ab797e565e199ce973c6f298c98b7df8957adc8894d0507987278dc94",
+				"dweb:/ipfs/QmcJusR9Tc34Z4eAmQ3acARV5TPsFjrVm9n29WnV2DkPv6"
+			]
+		}
+	},
+	"version": 1
+}
